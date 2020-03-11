@@ -1,6 +1,10 @@
 # DibsCruzr
 
+<<<<<<< HEAD
 > CruzarApplicationDibs VSCODE READ
+=======
+> CruzarApplicationDibs
+>>>>>>> Mater
 
 ## Usage
 
