@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "503094452776",
+    "firebase_url": "https://mastermldibs.firebaseio.com",
+    "project_id": "mastermldibs",
+    "storage_bucket": "mastermldibs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503094452776:android:8d71b94c02f3353f7b0b1d",
+        "android_client_info": {
+          "package_name": "com.obuda.dibscruzr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503094452776-aiqp9bthrbcpjgt076nsl61eipftsntf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvprkmeMgOM29ke8VY-MQiFj0q-aLJDjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503094452776-aiqp9bthrbcpjgt076nsl61eipftsntf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503094452776:android:12e020071d7fd3d27b0b1d",
+        "android_client_info": {
+          "package_name": "org.obuda.dibscruzr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503094452776-aiqp9bthrbcpjgt076nsl61eipftsntf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvprkmeMgOM29ke8VY-MQiFj0q-aLJDjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503094452776-aiqp9bthrbcpjgt076nsl61eipftsntf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
