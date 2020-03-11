@@ -1,6 +1,6 @@
 # DibsCruzr
 
-> CruzarApplicationDibs
+> CruzarApplicationDibs VSCODE READ
 
 ## Usage
 
