@@ -1,49 +1,47 @@
 <template>
-    <Page>
-        <ActionBar title="Welcome to NativeScript-Vue!" android:flat="true"/>
-        <TabView android:tabBackgroundColor="#53ba82"
-                 android:tabTextColor="#c4ffdf"
-                 android:selectedTabTextColor="#ffffff"
-                 androidSelectedTabHighlightColor="#ffffff">
-            <TabViewItem title="Tab 1">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" :text="msg" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
-            <TabViewItem title="Tab 2">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 2 Content" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
-            <TabViewItem title="Tab 3">
-                <GridLayout columns="*" rows="*">
-                    <Label class="message" text="Tab 3 Content" col="0" row="0"/>
-                </GridLayout>
-            </TabViewItem>
-        </TabView>
-    </Page>
+  <Page>
+    <ActionBar title="Firebase Vue demo"></ActionBar>
+
+    <StackLayout>
+      <Label class="message" :text="message" textWrap="true" horizontalAlignment="center"></Label>
+    </StackLayout>
+
+  </Page>
 </template>
 
-<script >
+<script>
+  import { inappmessaging } from "nativescript-plugin-firebase/inappmessaging";
+
   export default {
     data() {
       return {
-        msg: 'Hello World!'
+        message: "Fear not, young Skywalker"
       }
+    },
+
+    created() {
+      // wire up an 'onMessageClicked' callback
+      inappmessaging.onMessageClicked(message => {
+        this.message = `Campaign ${message.campaignName} clicked`;
+      });
+
+      // 👉 .. and for fun, wire an 'onMessageImpression' callback so when know when the message is shown
+      inappmessaging.onMessageImpression(message => {
+        this.message = `Campaign ${message.campaignName} seen`;
+      });
     }
   }
 </script>
 
 <style scoped>
-    ActionBar {
-        background-color: #53ba82;
-        color: #ffffff;
-    }
+  ActionBar {
+    background-color: #53ba82;
+    color: #ffffff;
+  }
 
-    .message {
-        vertical-align: center;
-        text-align: center;
-        font-size: 20;
-        color: #333333;
-    }
+  .message {
+    font-size: 17;
+    margin: 17;
+    color: #53ba82;
+  }
 </style>
